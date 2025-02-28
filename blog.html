@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings - Bokamoso Property Consultancy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            color: black;
+            flex-wrap: wrap;
+        }
+        .navbar .logo img {
+            height: 50px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #03840e;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        .box img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .footer {
+            background: #03840e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding-top: 10px;
+            }
+            .service-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Bokamoso Property Consultancy Logo">
+        </div>
+        <ul>
+            <li><a href="service.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="container services">
+        <h2 class="section-title">Our Services & Property Surveys</h2>
+        <div class="service-container">
+            <div class="box"><img src="service1.jpg" alt="House Plans"><p>House Plans</p></div>
+            <div class="box"><img src="service3.jpg" alt="House Construction"><p>House Construction</p></div>
+            <div class="box"><img src="service2.jpg" alt="Property Survey"><p>Property Survey</p></div>
+            <div class="box"><img src="service4.jpg" alt="Real Estate Activities"><p>Real Estate Activities</p></div>
+            <div class="box"><img src="service5.jpg" alt="Land Survey"><p>Land Survey</p></div>
+            <div class="box"><img src="service6.jpg" alt="Property Evaluation"><p>Property Evaluation</p></div>
+        </div>
+    </section>
+
+    <section class="container team">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="service-container">
+            <div class="box"><img src="team1.jpg" alt="Team Member"><p>Thembekile Letsoela - Broadcaster</p></div>
+            <div class="box"><img src="team2.jpg" alt="Team Member"><p>Teboho - Architect</p></div>
+            <div class="box"><img src="team3.jpg" alt="Team Member"><p>Elliot - Architect</p></div>
+        </div>
+    </section>
+
+    <section class="container blog">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        <div class="service-container">
+            <div class="box"><img src="blog1.jpg" alt="Blog Post"><p>Understanding Property Value</p></div>
+            <div class="box"><img src="blog2.jpg" alt="Blog Post"><p>Tips for First-Time Home Buyers</p></div>
+            <div class="box"><img src="blog3.jpg" alt="Blog Post"><p>Trends in Real Estate Market</p></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Bokamoso Property Consultancy (Pty) LTD. All rights reserved.</p>
+    </footer>
+</body>
+</html>
